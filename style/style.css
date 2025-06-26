@@ -1,0 +1,141 @@
+body{
+	font-family: 'Open Sans',sans-serif;
+	font-style: normal;
+}
+section{
+	padding: 60px 0;
+}
+.container{
+	max-width: 1080px;
+}
+.hero{
+	background: linear-gradient(90deg, #01A6FF 0.01%, #18B6FF 100%);
+}
+.hero p.top1{
+	font-size:22px;
+	font-weight: 600;
+	color: #fff;
+}
+.hero p.top2{
+	font-weight: 800;
+	font-size: 68px;
+	line-height: 80px;
+	color: #fff;
+}
+.hero p.top3{
+	font-size: 18px;
+	line-height: 25px;
+	color:#fff;
+}
+.hero p.top3 b{
+	font-weight: 600;
+	color: #FFC546;
+}
+.steps{
+	background-color: #FAFCFF;
+}
+.box{
+	background: #fff;
+	box-shadow: 0px 4px 30px rgba(33, 118, 217, 0.15);
+	border-radius: 10px;
+	padding:  20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.box:before{
+	content: '';
+	display: block;
+	height: 100px;
+	background: red;
+	border-radius: 10px 10px 0 0;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 150px;
+	margin:  -20px -20px 20px -20px;
+}
+.box.step1:before{
+	background-color: #61AAFF;
+	background-image: url('https://cdn01.rumahweb.com/under-construction/img/step1.png');
+}
+.box.step2:before{
+	background-color: #FFAD61;
+	background-image: url('https://cdn01.rumahweb.com/under-construction/img/step2.png');
+}
+.box.step3:before{
+	background-color: #FFAD61;
+	background-image: url('https://cdn01.rumahweb.com/under-construction/img/step3.png');
+}
+.box p{
+	font-size: 16px;
+	line-height: 22px;
+	color: #0D145A;
+}
+.box ul{
+	list-style-type: circle;
+	padding: 0 10px 0 15px;
+	min-height: 250px;
+}
+.box ul li{
+	font-size: 14px;
+	line-height: 25px;
+}
+
+.box ul li a{
+	color: #378DF0;
+	text-decoration: none;
+}
+.box ul li a:hover{
+	text-decoration: underline;
+}
+.btn-orange{
+	background-color: #FF8A00;
+	color: #fff !important;
+}
+.btn-orange:hover{
+	background-color: #BF6700;
+	color:  #fff !important;
+}
+.bantuan .col h4{
+	color:  #0D145A;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 36px;
+}
+.bantuan .col p{
+	color: #8689AC;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 28px;
+}
+.bantuan .col p a{
+	color: #378DF0;
+	text-decoration: none;
+}
+.bantuan .col p a:hover{
+	color:  #555;
+}
+@media only screen and (max-width: 576px) {
+
+	body{
+		text-align: center;
+	}
+	.hero p{
+		font-size: 1em !important;
+		line-height: initial !important;
+	}
+	.hero p.top2{
+		font-size: 1.5em !important;
+	}
+	body ul li{
+		text-align: left;
+	}
+	.hero .row{
+	    display: flex;
+	    flex-direction: column-reverse;
+	}
+
+	.bantuan .col{
+		margin-bottom: 20px;
+	}
+}
